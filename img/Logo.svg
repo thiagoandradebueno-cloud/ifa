@@ -13,7 +13,7 @@
     </filter>
   </defs>
 
-  <rect width="800" height="800" fill="#0D0D0D"/>
+  <rect width="50" height="50" fill="#0D0D0D"/>
 
   <!-- Shield -->
   <path d="M400 120L600 220V420C600 560 500 660 400 710C300 660 200 560 200 420V220L400 120Z"
@@ -49,7 +49,7 @@
   </g>
 
   <!-- Text -->
-  <text x="400" y="560"
+  <text x="30" y="40"
         text-anchor="middle"
         font-size="96"
         font-family="Verdana, sans-serif"

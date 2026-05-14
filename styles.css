@@ -1,0 +1,95 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --vermelho: darkred;
+    --laranja: #8b0000;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body, html {
+    background: linear-gradient(to bottom, #eea3a3 0%,#490606 100%);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Esconde o texto antes de entrar */
+}
+
+
+
+.titulo-digitando {
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 50px solid;
+    width: 1;
+    animation: typing 5s steps(30, end) forwards, blink 1s infinite;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+
+
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: black }
+}
+
+
+
+
+
+/* CSS */
+.gradient-text {
+  font-family: Garamond;
+  font-size: 30px;
+  background: linear-gradient(45deg, #072f01, #190007, #ebf1ee, #000611);
+  background-size: 400%; /* Aumenta o tamanho do fundo para animar */
+  -webkit-background-clip: text; /* Recorta o fundo no formato do texto */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Torna a cor original transparente */
+  animation: degrade-animation 10s ease infinite; /* Animação */
+}
+
+@keyframes degrade-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.tabela {
+ border:1px;
+ width:100%;
+}
